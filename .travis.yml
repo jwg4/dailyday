@@ -11,3 +11,6 @@ before_script:
 
 script:
   - python -m unittest discover
+
+notifications:
+  email: false
