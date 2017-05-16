@@ -5,6 +5,7 @@ tools_blueprint = Blueprint(
     __name__
 )
 
+
 @tools_blueprint.route('/health')
 def health_check():
     return "OK", 200
