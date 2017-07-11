@@ -10,7 +10,8 @@ tools_blueprint = Blueprint(
 @tools_blueprint.route('/health')
 def health_check():
     """ Check that the app is up and running. """
-    return "OK", 200
+    status = {'status': 'OK'}
+    return jsonify(status)
 
 
 @tools_blueprint.route('/docs')
